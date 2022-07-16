@@ -4,9 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 p {
-  display: center;
-  font-size: 40px;
-  margin-top: 10px;
+  display: inline;
+  font-size: 180px;
+  font-style: italic;
+  margin-top: 25px;
+  margin-left: 70px;
 }
 </style>
  <style>
@@ -19,6 +21,16 @@ body {
 </style> 
 </head>
 <body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
     <p id="days"></p>
     <p id="hours"></p>
     <p id="mins"></p>
@@ -45,8 +57,10 @@ body {
     document.getElementById("hours").innerHTML = hours + "h " 
     document.getElementById("mins").innerHTML = minutes + "m " 
     document.getElementById("secs").innerHTML = seconds + "s " 
-    document.getElementById("timeleft").style.color = "blue";
-        
+    document.getElementById("days").style.color = "blue"; 
+    document.getElementById("hours").style.color = "blue";
+    document.getElementById("mins").style.color = "red";
+    document.getElementById("secs").style.color = "red";  
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc);
